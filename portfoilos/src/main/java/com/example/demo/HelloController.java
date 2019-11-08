@@ -1,0 +1,21 @@
+package com.example.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+	@RequestMapping(value="/hello")
+	public @ResponseBody List<MemberVO> hello() {
+		List<MemberVO> li = new ArrayList<>();
+		li.add(new MemberVO("김용민", "27", "181", "100"));
+		li.add(new MemberVO("김용민", "27", "181", "100"));
+		
+		return li;
+	}
+}
