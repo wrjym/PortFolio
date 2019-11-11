@@ -9,13 +9,15 @@
 <h1>
 	<div id = "app">
 		{{message}}
+		{{data}}
 	</div>
 </h1>
 <script>
 	var app = new Vue({
 		el: '#app',
 		data : {
-			message : "Hello Vue!"
+			message : "Hello Vue!\n",
+			data : "Bye Vue!"
 		}
 	})
 </script>
